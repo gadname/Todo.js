@@ -17,7 +17,8 @@ const onClickAdd = () => {
   const deleteButton = document.createElement("button");
   deleteButton.innerText = "削除";
   deleteButton.addEventListener("click", () => {
-    //押されたs駆除ボタン
+    //押された削除ボタン
+    const deleteTarget = deleteButton.parentNode;
   });
 
   div.appendChild(li);
