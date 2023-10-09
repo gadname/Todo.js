@@ -19,6 +19,7 @@ const onClickAdd = () => {
   deleteButton.addEventListener("click", () => {
     //押された削除ボタン
     const deleteTarget = deleteButton.parentNode;
+    document.getElementById("incomplete-list").removeChild(deleteTarget);
   });
 
   div.appendChild(li);
