@@ -18,6 +18,8 @@ const onClickAdd = () => {
   console.log(deleteButton);
 
   div.appendChild(li);
+  div.appendChild(completeButton);
+  div.appendChild(deleteButton);
 
   const incompleteList = document.getElementById("incomplete-list");
   incompleteList.appendChild(div); // ここでエラーが発生していた部分を修正
