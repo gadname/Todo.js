@@ -24,6 +24,14 @@ const onClickAdd = () => {
 
     const backButton = document.createElement("button");
     backButton.innerText = "戻す";
+    backButton.addEventListener("click", () => {
+      //押された戻すボタンの親タグ(div)を完了リストから削除
+      const deleteTarget = backButton.parentNode;
+      document.getElementById("complete-list").removeChild(deleteTarget);
+      //テキスト取得
+      const text = backButton.parentNode.firstElementChild.innerText;
+    });
+
     addTarget.appendChild(li);
     addTarget.appendChild(backButton);
 
@@ -48,3 +56,6 @@ document.getElementById("add-button").addEventListener("click", onClickAdd);
 const deleteFromIncompleteList = (target) => {
   document.getElementById("incomplete-list").removeChild(target);
 };
+
+//未完了リストに追加する関数
+const createIncompleteList = (text) => {};
