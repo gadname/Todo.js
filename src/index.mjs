@@ -11,11 +11,14 @@ const onClickAdd = () => {
 
   const completeButton = document.createElement("button");
   completeButton.innerText = "完了";
+  completeButton.addEventListener("click", () => {});
 
   //削除ボタンのタグ生成
   const deleteButton = document.createElement("button");
   deleteButton.innerText = "削除";
-  console.log(deleteButton);
+  deleteButton.addEventListener("click", () => {
+    //押されたs駆除ボタン
+  });
 
   div.appendChild(li);
   div.appendChild(completeButton);
